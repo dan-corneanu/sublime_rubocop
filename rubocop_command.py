@@ -189,6 +189,11 @@ class RubocopCheckOpenFilesCommand(RubocopCommand):
 
 # --------- Lint Cops -------------
 
+# Runs layout cops and autocorrects the current file.
+class RubocopAutoCorrectLayoutCurrentFile(RubocopCheckSingleFileCommand):
+  def used_options(self):
+    return ['-x']
+
 # Runs a check on the current file (only using lint cops)
 class RubocopCheckCurrentFileOnlyWithLintCopsCommand(RubocopCheckSingleFileCommand):
   def used_options(self):

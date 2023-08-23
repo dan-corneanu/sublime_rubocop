@@ -22,6 +22,10 @@
 
   // ------- Lint cops --------
   {
+    "caption": "RuboCop: Fix layout on current file",
+    "command": "rubocop_auto_correct_layout_current_file"
+  },
+  {
     "caption": "RuboCop: Check current file (only with lint cops)",
     "command": "rubocop_check_current_file_only_with_lint_cops"
   },
